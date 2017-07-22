@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body *{ 
+                box-sizing: border-box;
+            }
+            nav {
+                position : absolute;
+                width : 200px;
+                top : 0px;
+                bottom : 0;
+                background-color : rgba(255,255,255,0.8);
+            }
+            .link{
+                width: 100%;
+                text-align: center;
+                padding-top: 20px;
+            }
+            .link:hover{
+                background-color: rgba(155,155,155,0.2);
+            }
+            #iframe-cont {
+                position : absolute;
+                left : 200px;
+                top : 0px;
+                bottom : 0;
+                right : 0;
+                background-color : #cee;
+                
+            }
+            search{
+                position: fixed;
+                width: 100%;
+                padding:20px;
+                background-color: rgba(155,155,155,0.5);
+            }
+            input,button{
+                padding:15px;
+                font-size: 24px;
+                margin:auto;
+                background-color: rgba(255,255,255,0.8);
+				border:none;
+			
+            }
+            input{
+				width:60%;
+				margin-left:10%;
+            }
+            button{
+                margin-left:0px;
+			}
+			a{
+				text-decoration: none;
+			}
+
+        </style>
+    </head>
+    <body>
+        <nav id="sidebar">
+            <img src="./grmescanview logo.png" style="width:200px"/>
+            <div class="link"><a href="#"><img src="scan-gun.png" style="width:100px" /><h2>Scan</h2></a></div>
+            <div class="link"><a href="#"><img src="view-papers.jpg" style="width:100px" /><h2>View</h2></a></div>
+            <div class="link"><a href="#"><img src="vv_logo-sq.png" style="width:100px" /><h2>VizVault</h2></a></div>        </nav>
+        </nav>
+
+        <div id="iframe-cont">
+        <search>
+            <input type="text" id="text" placeholder="Barcode value here">
+            <button type="submit">Submit</button>
+        </search>
+            <iframe src='https://benmarshall.me' width='100%' frameborder='0' height ='100%'>
+        </div>    
+    </body>
+</html>
